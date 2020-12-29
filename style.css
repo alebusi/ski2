@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.tabellone {
+    width: 1200px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#canvas {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes mymoveSelection {
+  0%   {background-color: white;}
+  100% {background-color: black;}
+}
+
+.spazio {
+    width: 80px;
+    height: 80px;
+    float: left;
+    display: inline-block;
+    background-color: transparent;
+}
+
+.spazio:hover {
+  animation: mymoveSelection 1s;
+}
+
+#campione {
+    position: fixed;
+    top: 80vh;
+    left: 86vw;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 6vw;
+    border: solid 1px white;
+    background-color: white;
+    z-index: 3;
+}
+
+.sinistra {
+    position: fixed;
+    width: 20vw;
+    height: 99vh;
+    touch-action: none;
+    user-select: none; /* Standard syntax */
+    z-index: 2;
+}
+
+.destra {
+    position: fixed;
+    width: 20vw;
+    height: 99vh;
+    left: 80vw;
+    touch-action: none;
+    user-select: none; /* Standard syntax */
+    z-index: 2;
+}
