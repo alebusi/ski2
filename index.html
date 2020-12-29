@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ski</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="pista"></div>
+  <div id="sciatore"></div>
+  <div class="sinistra" ontouchstart="muoviElemento(-1)" ontouchend="resetInt()"></div>
+  <div class="destra" ontouchstart="muoviElemento(1)" ontouchend="resetInt()"></div>
+  <div id="partenza" onclick="partenza()"></div> 
+  <script src="script.js"></script>
+</body>
+</html>
